@@ -1,11 +1,11 @@
-// tests/app.test.js
 const request = require('supertest');
-const app = require('../index');
+const app = require('../app');
 
-describe('Test endpoint /', () => {
-  it('should return 200 and Hello message', async () => {
-    const res = await request(app).get('/');
-    expect(res.statusCode).toEqual(200);
-    expect(res.text).toBe('Hello Docker + CI/CD!');
-  });
+describe('GET /', () => {
+  it('should return Hello Docker CI/CD', (done) => {
+    request(app)
+      .get('/')
+      .expect(200)
+      .expect('Hello Docker CI/CD', done);
+  });
 });
