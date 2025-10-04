@@ -14,18 +14,19 @@ export default [
     },
   },
   {
-    files: ["**/*.test.js", "**/*.spec.js", "test/**/*.js"],
+    files: ["**/*.test.js", "**/*.spec.js", "tests/**/*.js"],
     languageOptions: {
       globals: {
         ...globals.node,
-        ...globals.mocha,  // ou globals.jest si vous utilisez Jest
+        ...globals.jest,
         describe: "readonly",
         it: "readonly",
         expect: "readonly",
+        test: "readonly",
         beforeEach: "readonly",
         afterEach: "readonly",
-        before: "readonly",
-        after: "readonly",
+        beforeAll: "readonly",
+        afterAll: "readonly",
       },
     },
   },
