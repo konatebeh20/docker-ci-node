@@ -5,11 +5,16 @@
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "test": "mocha",
+    "test": "jest",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
   },
-  "keywords": ["docker", "nodejs", "ci", "cd"],
+  "keywords": [
+    "docker",
+    "nodejs",
+    "ci",
+    "cd"
+  ],
   "author": "",
   "license": "ISC",
   "dependencies": {
@@ -19,7 +24,6 @@
     "@eslint/js": "^8.57.0",
     "eslint": "^8.57.0",
     "globals": "^13.24.0",
-    "mocha": "^10.2.0",
     "supertest": "^7.1.4"
   }
 }
