@@ -1,8 +1,9 @@
 const express = require("express");
 const app = express();
 
-app.get("/", (req, res) => {
-  res.send("🚀 Hello Docker + Node.js + Express !");
+app.get('/', (req, res) => {
+//   res.send('Hello Docker + CI/CD!');
+  res.send('Hello Docker + ');
 });
 
 // N'écoutez sur un port que si le fichier est exécuté directement
