@@ -27,4 +27,4 @@ jobs:
       - name: Build Docker image
         run: |
           docker build -t docker-ci-node .
-          docker images
+          docker images
